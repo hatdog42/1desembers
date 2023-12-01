@@ -46,17 +46,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   carPrefab: {fileID: 4422192435844005484, guid: 628825f7352b6c347b04d3b22d7e948e, type: 3}
-  carSprites:
-  - {fileID: 3804816609364519879, guid: b0c06358548a57c40b657d65c1a8442e, type: 3}
+  carSpritesFront:
   - {fileID: 3582336149277234103, guid: 03da33df3b283b44d91c6f54bcdc7f88, type: 3}
-  - {fileID: 1775659272140162493, guid: a66aea336610a14478099e2eeda71629, type: 3}
   - {fileID: 967805970719613553, guid: 4644cd38d45182b45bed58c80d263d83, type: 3}
-  - {fileID: 8421420069518672669, guid: a90ff757636f91f4faf803556e47d123, type: 3}
   - {fileID: -5790912102866344002, guid: 0661d80dd367c3249addd2cd8b4483bf, type: 3}
-  - {fileID: 6668432266045249456, guid: 195751b75caded04d86f7b32c4ba5cda, type: 3}
   - {fileID: -6207547204986545707, guid: 4c023f768ef91e547a37a34eb5f84142, type: 3}
+  carSpritesBack:
+  - {fileID: 3804816609364519879, guid: b0c06358548a57c40b657d65c1a8442e, type: 3}
+  - {fileID: 1775659272140162493, guid: a66aea336610a14478099e2eeda71629, type: 3}
+  - {fileID: 8421420069518672669, guid: a90ff757636f91f4faf803556e47d123, type: 3}
+  - {fileID: 6668432266045249456, guid: 195751b75caded04d86f7b32c4ba5cda, type: 3}
   carSpeed: 2
-  interval: 2
+  intervalRandomRange: {x: 0, y: 0}
+  direction: 1
 --- !u!212 &386521979375870514
 SpriteRenderer:
   m_ObjectHideFlags: 0

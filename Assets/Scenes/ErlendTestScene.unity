@@ -142,19 +142,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881372392415311415, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1881372392415311415, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1881372392415311415, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1881372392415311415, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1881372392415311415, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -166,15 +166,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1881372392415311415, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 180
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4940714567234408938, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: m_Name
       value: CarSpawner (1)
       objectReference: {fileID: 0}
     - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
+      propertyPath: direction
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: carSprites.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
+      propertyPath: intervalRandomRange.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
+      propertyPath: intervalRandomRange.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: 'carSprites.Array.data[1]'
@@ -572,6 +584,14 @@ PrefabInstance:
     - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: carSprites.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
+      propertyPath: intervalRandomRange.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
+      propertyPath: intervalRandomRange.y
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6339406066319988398, guid: e594ed51066926a449735074c09ebdce, type: 3}
       propertyPath: 'carSprites.Array.data[0]'
