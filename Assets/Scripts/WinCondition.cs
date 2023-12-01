@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinCondition : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class WinCondition : MonoBehaviour
     {
         if (Time.time - _startTime >= winConditionTime)
         {
-            Debug.Log("Win");
+            SceneManager.LoadScene("GoodEndScene");
         }
     }
 }
