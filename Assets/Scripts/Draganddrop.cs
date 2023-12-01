@@ -16,7 +16,7 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler,IEndDr
     public void OnDrag(PointerEventData eventData)
     {
         eventData.pointerDrag.transform.localPosition =
-            (eventData.position - new Vector2(Screen.width/2,Screen.height/2)) /108;
+            (eventData.position - new Vector2(Screen.width/2,Screen.height/2)) /(Screen.height/10);
     }
 
     public void OnEndDrag(PointerEventData eventData)
