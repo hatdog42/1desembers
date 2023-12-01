@@ -15,8 +15,8 @@ public class SpawnCars : MonoBehaviour
     
     private void Start()
     {
-        _lastSpawnTime = Time.time;
         _interval = Random.Range(intervalRandomRange.x, intervalRandomRange.y);
+        _lastSpawnTime = Time.time;
     }
 
     private void Update()
