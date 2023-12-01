@@ -6,11 +6,14 @@ using Screen = UnityEngine.Device.Screen;
 [RequireComponent(typeof(Image))]
 public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler,IEndDragHandler
 {
+    public AudioSource Audio;
+    public AudioClip snow;
     public void OnBeginDrag(PointerEventData eventData)
     {
         var image = eventData.pointerDrag.GetComponent<Image>();
         image.raycastTarget = false;
         transform.SetAsLastSibling();
+        Audio.PlayOneShot(snow);
     }
 
     public void OnDrag(PointerEventData eventData)

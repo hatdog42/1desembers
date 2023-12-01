@@ -1,18 +1,26 @@
+using System;
 using System.Collections;
-using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 
 public class siclistControler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject syklist;
+
+    private bool idk = true;
+    private void Start()
     {
         
     }
 
-    // Update is called once per frame
-    void Update()
+    private void IEnumerator()
     {
+        while (true)
+        {
+            new WaitForSeconds(20f);
+
+            Instantiate(syklist,new Vector3(11,0,0),quaternion.identity);
+        }
         
     }
 }
