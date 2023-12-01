@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -9,26 +8,26 @@ public class SpawnCars : MonoBehaviour
     [SerializeField] private List<Sprite> carSprites;
     [SerializeField] private float carSpeed;
     [SerializeField] private int interval;
-    private float _startTime;
+    private float _lastSpawnTime;
 
     private void Start()
     {
-        _startTime = Time.time;
+        _lastSpawnTime = Time.time;
     }
 
     private void Update()
     {
-        if (_startTime < Time.time - interval)
+        if (_lastSpawnTime < Time.time - interval)
         {
             SpawnCar();
-            ++interval;
+            _lastSpawnTime = Time.time;
         }
     }
     
     private void SpawnCar()
     {
-        var newCar = Instantiate(carPrefab, transform.position, quaternion.identity);
+        var newCar = Instantiate(carPrefab, transform.position, Quaternion.identity);
         newCar.GetComponent<SpriteRenderer>().sprite = carSprites[Random.Range(0, carSprites.Count)];
-        newCar.GetComponent<Rigidbody2D>().velocity = carSpeed * transform.up;
+        newCar.GetComponent<Rigidbody2D>().velocity = carSpeed * -transform.up;
     }
 }

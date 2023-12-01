@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      greencarfront_0: 967805970719613553
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

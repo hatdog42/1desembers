@@ -128,7 +128,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      purplecarback_0: 8421420069518672669
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
