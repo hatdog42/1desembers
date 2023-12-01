@@ -24,8 +24,4 @@ public class DragAndDrop : MonoBehaviour, IDragHandler, IBeginDragHandler,IEndDr
         var image = eventData.pointerDrag.GetComponent<Image>();
         image.raycastTarget = true;
     }
-    
-   
-    
-   
 }
