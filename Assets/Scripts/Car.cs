@@ -12,6 +12,6 @@ public class Car : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        // Loose?
+        Debug.Log("Crash!");
     }
 }
