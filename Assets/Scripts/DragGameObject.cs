@@ -1,10 +1,14 @@
+using System;
 using UnityEngine;
 
 public class DragGameObject : MonoBehaviour
 {
     private Vector3 _screenPoint;
     private Vector3 _offset;
-
+    
+    public AudioSource Audio;
+    public AudioClip snow;
+    
     private void OnMouseDown()
     {
         var position = gameObject.transform.position;
@@ -31,5 +35,10 @@ public class DragGameObject : MonoBehaviour
         {
             Debug.Log("No Main Camera");
         }
+    }
+
+    private void OnMouseUp()
+    {
+        Audio.PlayOneShot(snow);
     }
 }
