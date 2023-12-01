@@ -1,28 +1,20 @@
-using System;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.PlayerLoop;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
-public class SnowOnTheRowdControler : MonoBehaviour, IEndDragHandler
+public class SnowOnTheRoadController : MonoBehaviour, IEndDragHandler
 {
     
     [SerializeField]private float speed;
     
     private bool _canMove = true;
 
-    private RectTransform transform;
-
-    [FormerlySerializedAs("Rigt")] public bool rightSide;
+    public bool rightSide;
 
 
     private void Start()
     {
-        transform = GetComponent<RectTransform>();
-        
-        SetRandomStuf();
+        SetRandomStuff();
     }
     private void Update()
     {
@@ -54,10 +46,10 @@ public class SnowOnTheRowdControler : MonoBehaviour, IEndDragHandler
             rightSide = false;
         }
         
-        SetRandomStuf();
+        SetRandomStuff();
     }
 
-    public void SetRandomStuf()
+    private void SetRandomStuff()
     {
         transform.localScale = new Vector3(1,1,1) * Random.Range(1, 3);
         
