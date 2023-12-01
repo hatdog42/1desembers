@@ -4,21 +4,15 @@ using Random = UnityEngine.Random;
 
 public class SpawnCars : MonoBehaviour
 {
-    [SerializeField] private  GameObject carPrefab;
+    [SerializeField] private GameObject carPrefab;
     [SerializeField] private List<Sprite> carSpritesFront;
     [SerializeField] private List<Sprite> carSpritesBack;
     [SerializeField] private float carSpeed;
     [SerializeField] private Vector2 intervalRandomRange = new Vector2(2, 10);
+    [SerializeField] private Direction direction;
     private float _interval;
     private float _lastSpawnTime;
-    [SerializeField] private Direction direction;
-
-    private enum Direction
-    {
-        Up,
-        Down
-    }
-
+    
     private void Start()
     {
         _lastSpawnTime = Time.time;
@@ -50,4 +44,6 @@ public class SpawnCars : MonoBehaviour
             newCar.GetComponent<Rigidbody2D>().velocity = carSpeed * transform.up;
         }
     }
+    
+    private enum Direction { Up, Down }
 }

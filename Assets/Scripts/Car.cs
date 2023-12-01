@@ -8,5 +8,7 @@ public class Car : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
+        // Loose?
     }
 }
